@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class= "my-5">ALL OUR FLATS (<%= @flats.count %>)</h1>
+</div>
+<div class="container row justify-content-between">
+  <% @flats.each do |flat| %>
+    <div class="col-4 mx-5 my-5 border rounded">
+      <div class="flat_info">
+        <img class= "img-fluid" src="https://www.travaux.com/images/cms/original/ebcd4d3c-6a00-47d2-8165-6d9e192082af.jpeg"/>
+          <h4><%= flat.name %></h4>
+          <p><%= flat.address %></p>
+          <p><%= flat.description %></p>
+          <p><%= flat.price_per_night%></p>
+          <p><%= flat.number_of_guests %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
