@@ -7,10 +7,10 @@
       <div class="flat_info">
         <img class= "img-fluid" src="https://www.travaux.com/images/cms/original/ebcd4d3c-6a00-47d2-8165-6d9e192082af.jpeg"/>
           <h4><%= flat.name %></h4>
-          <p><%= flat.address %></p>
+          <p> <i class="fas fa-location-arrow"></i> <%= flat.address %></p>
           <p><%= flat.description %></p>
-          <p><%= flat.price_per_night%></p>
-          <p><%= flat.number_of_guests %></p>
+          <p> <i class="fas fa-euro-sign mx-3"></i><%= flat.price_per_night%></p>
+          <p> <i class="fas fa-male mx-3"></i><%= flat.number_of_guests %></p>
       </div>
     </div>
   <% end %>
